@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2e0c21aa-7555-47fe-a3ff-ab5997ec06df}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d6bfca25-b616-49ed-a1cd-1058e78169d5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{9440dfcf-fd1a-4d4d-bed2-c729e8e70644}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bmobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bmpstrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cmpmsg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="colorsrc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="docking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imageatt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imaging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgbrush.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgcolor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgcpyps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgdlgs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgsuprt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgtools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgwell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgwnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ipframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="loadimag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="minifwnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ofn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pbrusdoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pbrusfrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pbrush.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pbrusvw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pgsetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pictures.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="printres.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rotate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="saveimag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skew.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="srvritem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t_curve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t_fhsel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t_poly.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t_text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tfont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thumnail.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="toolbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="undo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="mspaint.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bmobject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bmpstrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmpmsg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="colorsrc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debugres.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="docking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ferr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="filtapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fixhelp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hlpcntxt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imageatt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imaging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgbrush.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgcolor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgdlgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgsuprt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgtools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgwell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="interlac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ipframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="loadimag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="memtrace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="minifwnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msffdefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="numedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ofn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pbrusdoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pbrusfrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pbrush.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pbrusvw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pgsetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pictures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="printres.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="props.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="saveimag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="srvritem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="t_curve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="t_fhsel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="t_poly.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="t_text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tfont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="thumnail.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="toolbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="twainmgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="undo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wingdi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmsg_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmaps\airopt.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icons\bitimage.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\compwell.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\ellipse1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\ellipse2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\ellipse3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\ellipse4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\ellipse5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\ellipse6.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\ellipse7.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\ellipse8.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\font_prn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\font_psotf.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\font_tt.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\font_ttotf.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\font_type1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\handle.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\handle2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\imgtools.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\maintool.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icons\newpaint.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\sborigin.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\sbsize.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\selopt.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icons\skewhorz.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icons\skewvert.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icons\stchhorz.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icons\stchvert.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\text_tbv.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\bitmaps\zoomopt.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\cursors\air.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursors\brush.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursors\bullseye.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursors\cross.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursors\dragtool.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursors\fill.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursors\hibeam.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursors\hsplit.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursors\move.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\pbrush.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursors\pencil.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursors\pickup.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursors\sizenesw.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursors\sizens.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursors\sizenwse.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursors\sizewe.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\cursors\zoom.cur">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

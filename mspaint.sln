@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.34112.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mspaint", "mspaint\mspaint.vcxproj", "{8A85B407-C2FF-4CA7-B3F0-C1D70C22EA2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ANSI Debug|x86 = ANSI Debug|x86
+		ANSI Release|x86 = ANSI Release|x86
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A85B407-C2FF-4CA7-B3F0-C1D70C22EA2F}.ANSI Debug|x86.ActiveCfg = ANSI Debug|Win32
+		{8A85B407-C2FF-4CA7-B3F0-C1D70C22EA2F}.ANSI Debug|x86.Build.0 = ANSI Debug|Win32
+		{8A85B407-C2FF-4CA7-B3F0-C1D70C22EA2F}.ANSI Release|x86.ActiveCfg = ANSI Release|Win32
+		{8A85B407-C2FF-4CA7-B3F0-C1D70C22EA2F}.ANSI Release|x86.Build.0 = ANSI Release|Win32
+		{8A85B407-C2FF-4CA7-B3F0-C1D70C22EA2F}.Debug|x86.ActiveCfg = Debug|Win32
+		{8A85B407-C2FF-4CA7-B3F0-C1D70C22EA2F}.Debug|x86.Build.0 = Debug|Win32
+		{8A85B407-C2FF-4CA7-B3F0-C1D70C22EA2F}.Release|x86.ActiveCfg = Release|Win32
+		{8A85B407-C2FF-4CA7-B3F0-C1D70C22EA2F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D68627EF-378E-44F1-960B-D9BE7DA6FD00}
+	EndGlobalSection
+EndGlobal

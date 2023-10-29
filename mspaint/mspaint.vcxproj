@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="ANSI Debug|Win32">
+      <Configuration>ANSI Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ANSI Release|Win32">
+      <Configuration>ANSI Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{8A85B407-C2FF-4CA7-B3F0-C1D70C22EA2F}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ANSI Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ANSI Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ANSI Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ANSI Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ANSI Release|Win32'">
+    <OutDir>.\ReleaseA\</OutDir>
+    <IntDir>.\ReleaseA\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ANSI Debug|Win32'">
+    <OutDir>.\DebugA\</OutDir>
+    <IntDir>.\DebugA\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ANSI Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;WINNT;NT;USE_MIRRORING;USE_TWAIN;_MFC_VER=0x0600;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\ReleaseA\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\ReleaseA\mspaint.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\ReleaseA\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseA\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\ReleaseA\mspaint.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseA\mspaint.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\ReleaseA\mspaint.exe</OutputFile>
+      <DelayLoadDLLs>gdiplus.dll;uxtheme.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalDependencies>image.lib;htmlhelp.lib;imm32.lib;version.lib;wiaguid.lib;gdiplus.lib;uxtheme.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;UNICODE;WIN32;_WINDOWS;WINNT;NT;USE_MIRRORING;USE_TWAIN;_MFC_VER=0x0600;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\mspaint.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\mspaint.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\mspaint.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\mspaint.exe</OutputFile>
+      <DelayLoadDLLs>gdiplus.dll;uxtheme.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalDependencies>image.lib;htmlhelp.lib;imm32.lib;version.lib;wiaguid.lib;gdiplus.lib;uxtheme.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <PreprocessorDefinitions>_DEBUG;UNICODE;WIN32;_WINDOWS;WINNT;NT;USE_MIRRORING;USE_TWAIN;_MFC_VER=0x0600;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\mspaint.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\mspaint.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\mspaint.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\mspaint.exe</OutputFile>
+      <DelayLoadDLLs>gdiplus.dll;uxtheme.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalDependencies>image.lib;htmlhelp.lib;imm32.lib;version.lib;wiaguid.lib;gdiplus.lib;uxtheme.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <IgnoreSpecificDefaultLibraries>LIBC.LIB</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ANSI Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <PreprocessorDefinitions>_DEBUG;DBG;WIN32;_WINDOWS;WINNT;NT;USE_MIRRORING;USE_TWAIN;_MFC_VER=0x0600;_WIN32_WINNT=0x0501;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\DebugA\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\DebugA\mspaint.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\DebugA\</ObjectFileName>
+      <ProgramDataBaseFileName>.\DebugA\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\DebugA\mspaint.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\DebugA\mspaint.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\DebugA\mspaint.exe</OutputFile>
+      <DelayLoadDLLs>gdiplus.dll;uxtheme.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <AdditionalDependencies>image.lib;htmlhelp.lib;imm32.lib;version.lib;wiaguid.lib;gdiplus.lib;uxtheme.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bar.cpp" />
+    <ClCompile Include="bmobject.cpp" />
+    <ClCompile Include="bmpstrm.cpp" />
+    <ClCompile Include="cmpmsg.cpp" />
+    <ClCompile Include="colorsrc.cpp" />
+    <ClCompile Include="docking.cpp" />
+    <ClCompile Include="global.cpp" />
+    <ClCompile Include="imageatt.cpp" />
+    <ClCompile Include="imaging.cpp" />
+    <ClCompile Include="imgbrush.cpp" />
+    <ClCompile Include="imgcolor.cpp" />
+    <ClCompile Include="imgcpyps.cpp" />
+    <ClCompile Include="imgdlgs.cpp" />
+    <ClCompile Include="imgfile.cpp" />
+    <ClCompile Include="imgsuprt.cpp" />
+    <ClCompile Include="imgtools.cpp" />
+    <ClCompile Include="imgwell.cpp" />
+    <ClCompile Include="imgwnd.cpp" />
+    <ClCompile Include="ipframe.cpp" />
+    <ClCompile Include="loadimag.cpp" />
+    <ClCompile Include="minifwnd.cpp" />
+    <ClCompile Include="ofn.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ANSI Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ANSI Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="pbrusdoc.cpp" />
+    <ClCompile Include="pbrusfrm.cpp" />
+    <ClCompile Include="pbrush.cpp" />
+    <ClCompile Include="pbrusvw.cpp" />
+    <ClCompile Include="pgsetup.cpp" />
+    <ClCompile Include="pictures.cpp" />
+    <ClCompile Include="printres.cpp" />
+    <ClCompile Include="rotate.cpp" />
+    <ClCompile Include="saveimag.cpp" />
+    <ClCompile Include="settings.cpp" />
+    <ClCompile Include="skew.cpp" />
+    <ClCompile Include="sprite.cpp" />
+    <ClCompile Include="srvritem.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ANSI Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='ANSI Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ANSI Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='ANSI Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="tedit.cpp" />
+    <ClCompile Include="tfont.cpp" />
+    <ClCompile Include="thumnail.cpp" />
+    <ClCompile Include="toolbox.cpp" />
+    <ClCompile Include="tracker.cpp" />
+    <ClCompile Include="t_curve.cpp" />
+    <ClCompile Include="t_fhsel.cpp" />
+    <ClCompile Include="t_poly.cpp" />
+    <ClCompile Include="t_text.cpp" />
+    <ClCompile Include="undo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="mspaint.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="afxmsg_.h" />
+    <ClInclude Include="bar.h" />
+    <ClInclude Include="bmobject.h" />
+    <ClInclude Include="bmpstrm.h" />
+    <ClInclude Include="cmpmsg.h" />
+    <ClInclude Include="colorsrc.h" />
+    <ClInclude Include="debugres.h" />
+    <ClInclude Include="docking.h" />
+    <ClInclude Include="ferr.h" />
+    <ClInclude Include="filtapi.h" />
+    <ClInclude Include="fixhelp.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="hlpcntxt.h" />
+    <ClInclude Include="image.h" />
+    <ClInclude Include="imageatt.h" />
+    <ClInclude Include="imaging.h" />
+    <ClInclude Include="imgbrush.h" />
+    <ClInclude Include="imgcolor.h" />
+    <ClInclude Include="imgdlgs.h" />
+    <ClInclude Include="imgfile.h" />
+    <ClInclude Include="imgsuprt.h" />
+    <ClInclude Include="imgtools.h" />
+    <ClInclude Include="imgwell.h" />
+    <ClInclude Include="imgwnd.h" />
+    <ClInclude Include="interlac.h" />
+    <ClInclude Include="ipframe.h" />
+    <ClInclude Include="loadimag.h" />
+    <ClInclude Include="mapi.h" />
+    <ClInclude Include="memtrace.h" />
+    <ClInclude Include="minifwnd.h" />
+    <ClInclude Include="msffdefs.h" />
+    <ClInclude Include="numedit.h" />
+    <ClInclude Include="ofn.h" />
+    <ClInclude Include="pbrusdoc.h" />
+    <ClInclude Include="pbrusfrm.h" />
+    <ClInclude Include="pbrush.h" />
+    <ClInclude Include="pbrusvw.h" />
+    <ClInclude Include="pgsetup.h" />
+    <ClInclude Include="pictures.h" />
+    <ClInclude Include="printres.h" />
+    <ClInclude Include="props.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="saveimag.h" />
+    <ClInclude Include="settings.h" />
+    <ClInclude Include="sprite.h" />
+    <ClInclude Include="srvritem.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="tedit.h" />
+    <ClInclude Include="tfont.h" />
+    <ClInclude Include="thumnail.h" />
+    <ClInclude Include="toolbox.h" />
+    <ClInclude Include="tracker.h" />
+    <ClInclude Include="twainmgr.h" />
+    <ClInclude Include="t_curve.h" />
+    <ClInclude Include="t_fhsel.h" />
+    <ClInclude Include="t_poly.h" />
+    <ClInclude Include="t_text.h" />
+    <ClInclude Include="undo.h" />
+    <ClInclude Include="wingdi.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\cursors\air.cur" />
+    <CustomBuild Include="res\cursors\brush.cur" />
+    <CustomBuild Include="res\cursors\bullseye.cur" />
+    <CustomBuild Include="res\cursors\cross.cur" />
+    <CustomBuild Include="res\cursors\dragtool.cur" />
+    <CustomBuild Include="res\cursors\fill.cur" />
+    <CustomBuild Include="res\cursors\hibeam.cur" />
+    <CustomBuild Include="res\cursors\hsplit.cur" />
+    <CustomBuild Include="res\cursors\move.cur" />
+    <CustomBuild Include="res\cursors\pencil.cur" />
+    <CustomBuild Include="res\cursors\pickup.cur" />
+    <CustomBuild Include="res\cursors\sizenesw.cur" />
+    <CustomBuild Include="res\cursors\sizens.cur" />
+    <CustomBuild Include="res\cursors\sizenwse.cur" />
+    <CustomBuild Include="res\cursors\sizewe.cur" />
+    <CustomBuild Include="res\cursors\zoom.cur" />
+    <CustomBuild Include="res\pbrush.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmaps\airopt.bmp" />
+    <Image Include="res\bitmaps\compwell.bmp" />
+    <Image Include="res\bitmaps\ellipse1.bmp" />
+    <Image Include="res\bitmaps\ellipse2.bmp" />
+    <Image Include="res\bitmaps\ellipse3.bmp" />
+    <Image Include="res\bitmaps\ellipse4.bmp" />
+    <Image Include="res\bitmaps\ellipse5.bmp" />
+    <Image Include="res\bitmaps\ellipse6.bmp" />
+    <Image Include="res\bitmaps\ellipse7.bmp" />
+    <Image Include="res\bitmaps\ellipse8.bmp" />
+    <Image Include="res\bitmaps\font_prn.bmp" />
+    <Image Include="res\bitmaps\font_psotf.bmp" />
+    <Image Include="res\bitmaps\font_tt.bmp" />
+    <Image Include="res\bitmaps\font_ttotf.bmp" />
+    <Image Include="res\bitmaps\font_type1.bmp" />
+    <Image Include="res\bitmaps\handle.bmp" />
+    <Image Include="res\bitmaps\handle2.bmp" />
+    <Image Include="res\bitmaps\imgtools.bmp" />
+    <Image Include="res\bitmaps\maintool.bmp" />
+    <Image Include="res\bitmaps\sborigin.bmp" />
+    <Image Include="res\bitmaps\sbsize.bmp" />
+    <Image Include="res\bitmaps\selopt.bmp" />
+    <Image Include="res\bitmaps\text_tbv.bmp" />
+    <Image Include="res\bitmaps\zoomopt.bmp" />
+    <Image Include="res\icons\bitimage.ico" />
+    <Image Include="res\icons\newpaint.ico" />
+    <Image Include="res\icons\skewhorz.ico" />
+    <Image Include="res\icons\skewvert.ico" />
+    <Image Include="res\icons\stchhorz.ico" />
+    <Image Include="res\icons\stchvert.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
