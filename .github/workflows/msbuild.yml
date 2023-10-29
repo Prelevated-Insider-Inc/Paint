@@ -45,4 +45,6 @@ jobs:
       
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.3
-            
+      with:
+        name: build
+        path: D:\a\Paint\Paint\mspaint\Release\mspaint.exe
