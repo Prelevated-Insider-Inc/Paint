@@ -97,7 +97,7 @@ jobs:
       uses: actions/upload-artifact@v3.1.3
       with:
         name: PaintRelease
-        path: "D:\\a\\Paint\\Paint\\mspaint\\ANSI Debug\\mspaint.exe"
+        path: "D:\\a\\Paint\\Paint\\mspaint\\Debug\\mspaint.exe"
                         
   Build-ANSIRelease:
     runs-on: windows-latest
@@ -122,6 +122,6 @@ jobs:
       uses: actions/upload-artifact@v3.1.3
       with:
         name: PaintRelease
-        path: "D:\\a\\Paint\\Paint\\mspaint\\ANSI Release\\mspaint.exe"
+        path: "D:\\a\\Paint\\Paint\\mspaint\\Release\\mspaint.exe"
 
      
