@@ -117,6 +117,11 @@
 #define IDB_SELOPT                      863
 #define IDB_AIROPT                      864
 #define IDS_UNABLE_TO_PASTE             1000
+#define IDC_NAME                        1001
+#define IDC_VERSION                     1002
+#define IDC_DEVELOPER                   1003
+#define IDC_RELEASE_DATE                1004
+#define IDC_DESCRIPTION                 1005
 #define IDC_STRETCH_HORZ_PERCENT        1019
 #define IDC_STRETCH_VERT_PERCENT        1020
 #define IDC_SKEW_HORZ_DEGREES           1021
@@ -187,6 +192,7 @@
 #define IDC_STR_PAGES_WIDE              1219
 #define IDC_PAGES_TALL                  1220
 #define IDC_STR_PAGES_TALL              1221
+#define IDD_ABOUTBOX                    2001
 #define IDS_ERROR_OPEN                  2051
 #define IDS_ERROR_READLOAD              2052
 #define IDS_ERROR_SAVERO                2054
