@@ -919,6 +919,8 @@ LRESULT CALLBACK AboutBoxProc(HWND hwnd, UINT message, WPARAM w_param, LPARAM l_
     return FALSE;
 }
 
+#include <string>
+
 void CPBApp::OnAppAbout() {
     // Create the About Box dialog
     INT_PTR result = DialogBoxParam(
@@ -931,10 +933,11 @@ void CPBApp::OnAppAbout() {
 
     if (result == -1) {
         DWORD error = GetLastError();
-        // Add error handling or log the error, e.g., using TRACE
-        MessageBox(NULL, _T("DialogBoxParam failed, error code: ") + std::to_wstring(error), _T("Error"), MB_OK | MB_ICONERROR);
+        // Display the error code in a MessageBox
+        MessageBox(NULL, (LPCWSTR)(_T("DialogBoxParam failed, error code: ") + std::to_wstring(error).c_str()), _T("Error"), MB_OK | MB_ICONERROR);
     }
 }
+
 
 
 /***************************************************************************/
