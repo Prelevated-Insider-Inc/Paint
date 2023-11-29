@@ -933,10 +933,17 @@ void CPBApp::OnAppAbout() {
 
     if (result == -1) {
         DWORD error = GetLastError();
+
         // Display the error code in a MessageBox
-        MessageBox(NULL, (LPCWSTR)(_T("DialogBoxParam failed, error code: ") + std::to_wstring(error).c_str()), _T("Error"), MB_OK | MB_ICONERROR);
+        MessageBox(
+            NULL,
+            (LPCWSTR)(_T("DialogBoxParam failed, error code: ") + std::to_wstring(error)).c_str(),
+            _T("Error"),
+            MB_OK | MB_ICONERROR
+        );
     }
 }
+
 
 
 
