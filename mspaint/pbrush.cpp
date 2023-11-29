@@ -894,21 +894,36 @@ void CPBApp::TryToFreeMemory()
 
 /***************************************************************************/
 
-// App command to run the dialog
-void CPBApp::OnAppAbout()
-    {
-    CString sTitle;
-    CString sBrag;
-    HICON   hIcon = LoadIcon( ID_MAINFRAME );
 
-    sTitle.LoadString( AFX_IDS_APP_TITLE );
-    sBrag.LoadString( IDS_PerContractSoDontChange );
+// Function to handle messages for the About Box
+LRESULT CALLBACK AboutBoxProc(HWND hwnd, UINT message, WPARAM w_param, LPARAM l_param) {
+    switch (message) {
+        case WM_INITDIALOG:
+            // Set the text in the About Box
+            SetDlgItemText(hwnd, IDC_NAME, "Paintbrush (Beta)");
+            SetDlgItemText(hwnd, IDC_VERSION, "Version: v0.0.1-alpha");
+            SetDlgItemText(hwnd, IDC_DEVELOPER, "Developer: Prelevated Insider");
+            SetDlgItemText(hwnd, IDC_RELEASE_DATE, "Release Date: Not released");
+            SetDlgItemText(hwnd, IDC_DESCRIPTION, "Based on Windows Server 2003 leaked source code's MSPaint, made open-source!");
+            return TRUE;
 
-    ShellAbout( AfxGetMainWnd()->GetSafeHwnd(), sTitle, sBrag, hIcon );
-
-    if (hIcon != NULL)
-        ::DestroyIcon( hIcon );
+        case WM_COMMAND:
+            if (LOWORD(w_param) == IDOK || LOWORD(w_param) == IDCANCEL) {
+                // Close the About Box when OK or Cancel button is clicked
+                EndDialog(hwnd, 0);
+                return TRUE;
+            }
+            break;
     }
+
+    return FALSE;
+}
+
+void CPBApp::OnAppAbout() {
+    // Create the About Box dialog
+    DialogBox(AfxGetInstanceHandle(), MAKEINTRESOURCE(IDD_ABOUTBOX), AfxGetMainWnd(), AboutBoxProc);
+}
+
 
 /***************************************************************************/
 
