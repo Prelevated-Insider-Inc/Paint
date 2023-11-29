@@ -932,7 +932,7 @@ void CPBApp::OnAppAbout() {
     if (result == -1) {
         DWORD error = GetLastError();
         // Add error handling or log the error, e.g., using TRACE
-        TRACE(_T("DialogBoxParam failed, error code: %lu\n"), error);
+        MessageBox(NULL, _T("DialogBoxParam failed, error code: ") + std::to_wstring(error), _T("Error"), MB_OK | MB_ICONERROR);
     }
 }
 
