@@ -921,14 +921,21 @@ LRESULT CALLBACK AboutBoxProc(HWND hwnd, UINT message, WPARAM w_param, LPARAM l_
 
 void CPBApp::OnAppAbout() {
     // Create the About Box dialog
-    DialogBoxParam(
+    INT_PTR result = DialogBoxParam(
         AfxGetInstanceHandle(),
         MAKEINTRESOURCE(IDD_ABOUTBOX),
         AfxGetMainWnd()->GetSafeHwnd(),
         reinterpret_cast<DLGPROC>(AboutBoxProc),
         0
     );
+
+    if (result == -1) {
+        DWORD error = GetLastError();
+        // Add error handling or log the error, e.g., using TRACE
+        TRACE(_T("DialogBoxParam failed, error code: %lu\n"), error);
+    }
 }
+
 
 /***************************************************************************/
 
