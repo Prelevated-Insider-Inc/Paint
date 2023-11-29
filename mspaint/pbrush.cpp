@@ -924,12 +924,11 @@ void CPBApp::OnAppAbout() {
     DialogBoxParam(
         AfxGetInstanceHandle(),
         MAKEINTRESOURCE(IDD_ABOUTBOX),
-        AfxGetMainWnd()->GetSafeHwnd(),  // Use GetSafeHwnd() to obtain the HWND
-        AboutBoxProc,
+        AfxGetMainWnd()->GetSafeHwnd(),
+        reinterpret_cast<DLGPROC>(AboutBoxProc),
         0
     );
 }
-
 
 /***************************************************************************/
 
