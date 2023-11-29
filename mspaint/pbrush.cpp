@@ -900,11 +900,11 @@ LRESULT CALLBACK AboutBoxProc(HWND hwnd, UINT message, WPARAM w_param, LPARAM l_
     switch (message) {
         case WM_INITDIALOG:
             // Set the text in the About Box
-            SetDlgItemText(hwnd, IDC_NAME, "Paintbrush (Beta)");
-            SetDlgItemText(hwnd, IDC_VERSION, "Version: v0.0.1-alpha");
-            SetDlgItemText(hwnd, IDC_DEVELOPER, "Developer: Prelevated Insider");
-            SetDlgItemText(hwnd, IDC_RELEASE_DATE, "Release Date: Not released");
-            SetDlgItemText(hwnd, IDC_DESCRIPTION, "Based on Windows Server 2003 leaked source code's MSPaint, made open-source!");
+            SetDlgItemTextW(hwnd, IDC_NAME, L"Paintbrush (Beta)");
+            SetDlgItemTextW(hwnd, IDC_VERSION, L"Version: v0.0.1-alpha");
+            SetDlgItemTextW(hwnd, IDC_DEVELOPER, L"Developer: Prelevated Insider");
+            SetDlgItemTextW(hwnd, IDC_RELEASE_DATE, L"Release Date: Not released");
+            SetDlgItemTextW(hwnd, IDC_DESCRIPTION, L"Based on Windows Server 2003 leaked source code's MSPaint, made open-source!");
             return TRUE;
 
         case WM_COMMAND:
@@ -921,7 +921,13 @@ LRESULT CALLBACK AboutBoxProc(HWND hwnd, UINT message, WPARAM w_param, LPARAM l_
 
 void CPBApp::OnAppAbout() {
     // Create the About Box dialog
-    DialogBox(AfxGetInstanceHandle(), MAKEINTRESOURCE(IDD_ABOUTBOX), AfxGetMainWnd(), AboutBoxProc);
+    DialogBoxParam(
+        AfxGetInstanceHandle(),
+        MAKEINTRESOURCE(IDD_ABOUTBOX),
+        AfxGetMainWnd()->GetSafeHwnd(),  // Use GetSafeHwnd() to obtain the HWND
+        AboutBoxProc,
+        0
+    );
 }
 
 
