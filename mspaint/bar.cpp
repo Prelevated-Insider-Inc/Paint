@@ -63,7 +63,9 @@ static UINT BASED_CODE indicators[] =
 
 BEGIN_MESSAGE_MAP( CStatBar, CStatusBar )
                 ON_WM_SYSCOLORCHANGE()
+        #include "zoom_slider.h"
         ON_MESSAGE(WM_SETFONT, OnSetFont)
+        ON_WM_MOUSEWHEEL()
                 ON_MESSAGE(WM_SIZEPARENT, OnSizeParent)
         ON_WM_NCDESTROY()
 END_MESSAGE_MAP()
@@ -139,7 +141,9 @@ BOOL CStatBar::Create( CWnd* pParentWnd )
                 BITMAP bmp;
 
                 m_posBitmap.GetObject(sizeof (BITMAP), &bmp);
-
+                ZoomSlider zoomSlider;
+                zoomSlider.create(this);
+                zoomSlider.drawSlider();
                 m_iBitmapWidth  = bmp.bmWidth;
                 m_iBitmapHeight = bmp.bmHeight;
 
@@ -288,6 +292,7 @@ LRESULT CStatBar::OnSetFont(WPARAM wParam, LPARAM lParam)
 
     m_cyTopBorder    = iTmpcyTopBorder;
     m_cyBottomBorder = iTmpcyBottomBorder;
+    zoomSlider.handleSliderEvent();
 
     return 1L;
     }
