@@ -123,6 +123,9 @@ CPBApp::CPBApp()
 
     m_nFileErrorCause  = 0;  // from CFileException::m_cause
     m_wEmergencyFlags  = 0;
+
+    // Initialize the zoom level to 1.0 (no zoom)
+    m_dZoomLevel = 1.0;
     m_tickLastWarning  = 0;
     m_iCurrentUnits    = 0;
 
