@@ -18,10 +18,13 @@
 #define CMP_RGB_BLACK       RGB(0, 0, 0)        // instead of frame
 
 #define HID_BASE_BUTTON    0x00070000UL        // IDMB and IDMY
+#define ID_ZOOM_SLIDER     0x00080000UL        // Identifier for the zoom slider
 
 extern CBrush*  GetHalftoneBrush();
 extern CBrush*  GetSysBrush(UINT nSysColor);
 extern void     ResetSysBrushes();
+
+extern HWND     hZoomSlider;  // Handle for the zoom slider control
 extern COLORREF MyGetSysColor(UINT nSysColor);
 
 // Remove the drive and directory from a file name...
