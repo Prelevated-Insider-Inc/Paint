@@ -294,7 +294,8 @@ public:
                                                                dx, dy, order));
     }
 
-    Status ScaleTransform(IN REAL sx,
+    // Placeholder for zoom functionality: Adjust sx and sy according to the desired zoom level
+Status ScaleTransform(IN REAL sx,
                           IN REAL sy,
                           IN MatrixOrder order = MatrixOrderPrepend)
     {
