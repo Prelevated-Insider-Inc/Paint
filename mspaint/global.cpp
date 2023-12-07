@@ -156,6 +156,79 @@ CString StripPath(const TCHAR* szFilePath)
 //
 CString StripName(const TCHAR* szFilePath)
     {
+void UpdatePaintbrushView()
+{
+    // Adjust the size of the paintbrush view's buffer based on the current zoom level
+    theApp.m_pMainWnd->m_pView->AdjustBufferSize(theApp.m_pMainWnd->m_nZoomLevel);
+
+    // Invalidate the main window to re-render the image
+    theApp.m_pMainWnd->Invalidate();
+}
+
+void ZoomIn()
+{
+    // Increase the zoom level
+    theApp.m_pMainWnd->m_nZoomLevel++;
+
+    // Update the paintbrush view
+    UpdatePaintbrushView();
+}
+
+void ZoomOut()
+{
+    // Decrease the zoom level
+    theApp.m_pMainWnd->m_nZoomLevel--;
+
+    // Update the paintbrush view
+    UpdatePaintbrushView();
+}
+
+void HandleScroll(WPARAM wParam, LPARAM lParam)
+{
+    // Handle zooming in or out
+    if (LOWORD(wParam) == SB_PAGEUP)
+    {
+        ZoomIn();
+    }
+    else if (LOWORD(wParam) == SB_PAGEDOWN)
+    {
+        ZoomOut();
+    }
+
+    // Update the paintbrush view
+    UpdatePaintbrushView();
+}
+void CreateZoomSlider()
+{
+    // Create a slider control
+    HWND hSlider = CreateWindowEx(0, TRACKBAR_CLASS, NULL, WS_CHILD | WS_VISIBLE, 0, 0, 100, 30, theApp.m_pMainWnd->m_hWndStatusBar, NULL, theApp.m_hInstance, NULL);
+
+    // Set the range of the slider to represent the zoom level
+    SendMessage(hSlider, TBM_SETRANGE, TRUE, MAKELONG(1, 10));
+
+    // Set the initial position of the slider to the current zoom level
+    SendMessage(hSlider, TBM_SETPOS, TRUE, theApp.m_pMainWnd->m_nZoomLevel);
+}
+
+LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
+{
+    switch (message)
+    {
+    case WM_HSCROLL:
+        // Handle messages for the zoom slider
+        if ((HWND)lParam == theApp.m_pMainWnd->m_hWndZoomSlider)
+        {
+            // Update the zoom level based on the slider's position
+            theApp.m_pMainWnd->m_nZoomLevel = SendMessage((HWND)lParam, TBM_GETPOS, 0, 0);
+
+            // Update the paintbrush view
+            UpdatePaintbrushView();
+        }
+        break;
+    // ...
+    }
+    return DefWindowProc(hWnd, message, wParam, lParam);
+}
     TCHAR szPath [_MAX_DRIVE + _MAX_DIR];
     TCHAR szDir [_MAX_DIR];
     MySplitPath(szFilePath, szPath, szDir, NULL, NULL);
