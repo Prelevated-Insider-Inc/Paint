@@ -377,6 +377,18 @@ BOOL CPBApp::InitInstance()
 
     // Standard initialization
     // If you are not using these features and wish to reduce the size
+// Create the zoom slider in the status bar
+hZoomSlider = CreateWindowEx(0, TRACKBAR_CLASS, NULL, WS_CHILD | WS_VISIBLE, 0, 0, 100, 30, m_pMainWnd->GetSafeHwnd(), (HMENU)ID_ZOOM_SLIDER, AfxGetInstanceHandle(), NULL);
+if (hZoomSlider == NULL)
+{
+    AfxMessageBox(_T("Failed to create zoom slider."));
+    return FALSE;
+}
+// Set the range of the zoom slider (e.g. 1 to 100)
+SendMessage(hZoomSlider, TBM_SETRANGE, (WPARAM)TRUE, (LPARAM)MAKELONG(1, 100));
+// Set the initial position of the zoom slider to the current zoom level
+// Assuming the current zoom level is stored in a variable named "zoomLevel"
+SendMessage(hZoomSlider, TBM_SETPOS, (WPARAM)TRUE, (LPARAM)zoomLevel);
     //  of your final executable, you should remove from the following
     //  the specific initialization routines you do not need.
 
@@ -544,6 +556,9 @@ int CPBApp::ExitInstance()
     ResetSysBrushes();
 
     CTracker::CleanUpTracker();
+// Update the position of the zoom slider to match the current zoom level
+// Assuming the current zoom level is stored in a variable named "zoomLevel"
+SendMessage(hZoomSlider, TBM_SETPOS, (WPARAM)TRUE, (LPARAM)zoomLevel);
 
     return CWinApp::ExitInstance();
     }
