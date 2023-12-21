@@ -386,9 +386,6 @@ if (hZoomSlider == NULL)
 }
 // Set the range of the zoom slider (e.g. 1 to 100)
 SendMessage(hZoomSlider, TBM_SETRANGE, (WPARAM)TRUE, (LPARAM)MAKELONG(1, 100));
-// Set the initial position of the zoom slider to the current zoom level
-// Assuming the current zoom level is stored in a variable named "zoomLevel"
-SendMessage(hZoomSlider, TBM_SETPOS, (WPARAM)TRUE, (LPARAM)zoomLevel);
     //  of your final executable, you should remove from the following
     //  the specific initialization routines you do not need.
 
@@ -558,7 +555,6 @@ int CPBApp::ExitInstance()
     CTracker::CleanUpTracker();
 // Update the position of the zoom slider to match the current zoom level
 // Assuming the current zoom level is stored in a variable named "zoomLevel"
-SendMessage(hZoomSlider, TBM_SETPOS, (WPARAM)TRUE, (LPARAM)zoomLevel);
 
     return CWinApp::ExitInstance();
     }
