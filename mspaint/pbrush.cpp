@@ -374,18 +374,6 @@ BOOL CPBApp::InitInstance()
         pFilter->EnableNotRespondingDialog(FALSE); 
         pFilter->EnableBusyDialog(FALSE);
         }
-
-    // Standard initialization
-    // If you are not using these features and wish to reduce the size
-// Create the zoom slider in the status bar
-hZoomSlider = CreateWindowEx(0, TRACKBAR_CLASS, NULL, WS_CHILD | WS_VISIBLE, 0, 0, 100, 30, m_pMainWnd->GetSafeHwnd(), (HMENU)ID_ZOOM_SLIDER, AfxGetInstanceHandle(), NULL);
-if (hZoomSlider == NULL)
-{
-    AfxMessageBox(_T("Failed to create zoom slider."));
-    return FALSE;
-}
-// Set the range of the zoom slider (e.g. 1 to 100)
-SendMessage(hZoomSlider, TBM_SETRANGE, (WPARAM)TRUE, (LPARAM)MAKELONG(1, 100));
     //  of your final executable, you should remove from the following
     //  the specific initialization routines you do not need.
 
