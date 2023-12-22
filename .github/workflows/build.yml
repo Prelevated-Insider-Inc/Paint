@@ -49,6 +49,12 @@ jobs:
         name: PaintDebug
         path: D:\a\Paint\Paint\mspaint\Debug\mspaint.exe
         
+    - name: Upload symbol artifact
+      uses: actions/upload-artifact@v3.1.3
+      with:
+        name: PaintDebug
+        path: D:\a\Paint\Paint\mspaint\Debug\mspaint.pdb
+        
   Build-Release:
     runs-on: windows-latest
 
@@ -73,6 +79,12 @@ jobs:
       with:
         name: PaintRelease
         path: D:\a\Paint\Paint\mspaint\Release\mspaint.exe
+        
+    - name: Upload symbol artifact
+      uses: actions/upload-artifact@v3.1.3
+      with:
+        name: PaintRelease
+        path: D:\a\Paint\Paint\mspaint\Release\mspaint.pdb
                 
   Build-ANSIDebug:
     runs-on: windows-latest
@@ -98,6 +110,13 @@ jobs:
       with:
         name: PaintDebugA
         path: D:\a\Paint\Paint\mspaint\DebugA\mspaint.exe
+        
+    - name: Upload symbol artifact
+      uses: actions/upload-artifact@v3.1.3
+      with:
+        name: PaintDebugA
+        path: D:\a\Paint\Paint\mspaint\DebugA\mspaint.pdb
+
                         
   Build-ANSIRelease:
     runs-on: windows-latest
@@ -123,5 +142,12 @@ jobs:
       with:
         name: PaintReleaseA
         path: D:\a\Paint\Paint\mspaint\ReleaseA\mspaint.exe
+
+    - name: Upload symbol artifact
+      uses: actions/upload-artifact@v3.1.3
+      with:
+        name: PaintReleaseA
+        path: D:\a\Paint\Paint\mspaint\ReleaseA\mspaint.pdb
+
 
      
